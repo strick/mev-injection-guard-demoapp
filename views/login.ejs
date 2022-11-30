@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-8">
+        <form method="POST" action="/login">
+        <!-- User input -->
+        <div class="form-outline mb-4">
+        <input type="text" id="username" name="username" class="form-control" />
+        <label class="form-label" for="username">Usename</label>
+        </div>
+    
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+        <input type="password" id="password" name="password" class="form-control" />
+        <label class="form-label" for="password">Password</label>
+        </div>
+    
+        <!-- Submit button -->
+        <button type="button" onclick="submit();" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+    </form>
+    </div>
+    <div class="col-8">Results: 
+        <%try { let e = JSON.stringify(results); %>
+        
+        Username: <%=username%> <br />
+        Password: <%=password%> <br />
+        Query: <%=e%> 
+        
+        <%} catch(e){}%></div>
+  </div>

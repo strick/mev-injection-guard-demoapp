@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <form method="POST" action="/">
+            <ul style="list-style: none">
+                <li>
+                    <label>First name: <input type="text" name="first_name" /></label>
+                </li>
+                <li>
+                    <label>Last name: <input type="text" name="last_name" /></label>
+                </li>
+                <li>
+                    <label>Email: <input type="text" name="email" /></label>,
+                </li>
+                <li>
+                    <label>Gender: <input type="radio" name="gender" value="male" />  <input type="radio" name="gender" value="female" />
+                </li>
+                <li>
+                    <label>Favorite colors:</label>
+                    <ul>
+                        <li><label><input type="checkbox" name="colors[]" value="red">Red</label></li>
+                        <li><label><input type="checkbox" name="colors[]" value="blue">Blue</label></li>
+                        <li><label><input type="checkbox" name="colors[]" value="yellow">Yellow</label></li>
+                    </ul>
+                </li>
+                <li><input type="submit" value="Submit" /></li>
+            </ul>
+        </form>
+    </body>
+</html>
