@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-const DbConnector = require('/db').DbConnector;
+const DbConnector = require('./db').DbConnector;
 (async () => {    
     await DbConnector.open(app);
 
